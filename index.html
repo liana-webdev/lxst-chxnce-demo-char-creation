@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="pages">
+      <div id="1" class="page">
+        <div class="light">
+
+        </div>
+        <div class="sect">
+          <p>Тело</p>
+        </div>
+      </div>
+
+      <div id="2" class="page">
+        <div class="light"></div>
+        <div class="sect">
+          <p>Родители</p>
+        </div>
+      </div>
+
+      <div id="3" class="page">
+        <div class="light"></div>
+        <div class="sect">
+          <p>Голова</p>
+        </div>
+      </div>
+
+      <div id="4" class="page">
+        <div class="light"></div>
+        <div class="sect">
+          <p>Лицо</p>
+        </div>
+      </div>
+
+      <div id="5" class="page">
+        <div class="light"></div>
+        <div class="sect">
+          <p>Волосы</p>
+        </div>
+      </div>
+
+      <div id="6" class="page">
+        <div class="light"></div>
+        <div class="sect">
+          <p>Особенности</p>
+        </div>
+      </div>
+      <div id="7" class="page">
+        <div class="light"></div>
+        <div class="sect">
+          <p>Еще что-то</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel">
+
+      <section id="body" style="display: none;" class="body">
+        <div class="columns">
+          <div class="column">
+            <p>Пол</p>
+            <div id="sex" class="imgs">
+              <img src="./img/girl-symbol.png" alt="">
+              <img src="./img/boy-symbol.png" alt="">
+            </div>
+          </div>
+          <div id="age" class="column">
+            <p>Возраст</p>
+            <div class="age">
+              <input type="text" placeholder="-" style="margin: inherit;" class="input">
+              <p style="padding-bottom: 0.4vw; padding-left: 0.7vw;">лет</p>
+            </div>
+          </div>
+        </div>
+        <div class="rows">
+          <div id="height" class="row">
+            <p>Рост</p>
+            <input id="manualHeight" class="input" type="text" value="180" placeholder="-">
+            <div class="columns" style="justify-content: space-between; width: 41vw;">
+              <div class="column">
+                <p>150 см</p>
+              </div>
+              <div class="column">
+                <p>210 см</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="slidecontainer">
+              <input id="sliderHeight" type="range" min="150" max="210" value="180" class="slider" id="myRange">
+            </div>
+          </div>
+        </div>
+
+        <div class="rows">
+          <div id="height" class="row">
+            <p>Вес</p>
+            <input id="manualWeight" class="input" type="text" value="75" placeholder="-">
+            <div class="columns" style="justify-content: space-between; width: 41vw;">
+              <div class="column">
+                <p>40 кг</p>
+              </div>
+              <div class="column">
+                <p>150 кг</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="slidecontainer">
+              <input id="sliderWeight" type="range" min="40" max="150" value="75" class="slider" id="myRange">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="parents" style="display: inherit;" class="body">
+        <div class="columns">
+          <p>Отец</p>
+          <p>Мать</p>
+        </div>
+        <div id="chooseParents" class="columns">
+          <div data-tilt-scale='1.2' class="column">
+            <img id="" class="parent" data-tilt-scale='1.2' data-tilt data-tilt-reverse='true'
+              src="./img/parents/claude.png" alt="">
+            <img id="" class="parent" data-tilt-scale='1.2' data-tilt data-tilt-reverse='true'
+              src="./img/parents/john.png" alt="">
+            <img id="" class="parent" data-tilt-scale='1.2' data-tilt data-tilt-reverse='true'
+              src="./img/parents/nikko.png" alt="">
+          </div>
+          <div class="column">
+            <img id="" class="parent" data-tilt-scale='1.2' data-tilt data-tilt-reverse='true'
+              src="./img/parents/misty.png" alt="">
+            <img id="" class="parent" data-tilt-scale='1.2' data-tilt data-tilt-reverse='true'
+              src="./img/parents/misty.png" alt="">
+            <img id="" class="parent" data-tilt-scale='1.2' data-tilt data-tilt-scale="1.1" data-tilt-speed='100'
+              data-tilt data-tilt-reverse="true" src="./img/parents/misty.png" alt="">
+          </div>
+
+        </div>
+
+        <div class="rows">
+          <div class="row">
+            <div id="height" class="row">
+              <p>Схожесть внешности</p>
+
+              <div class="columns" style="justify-content: space-between; width: 41vw;">
+                <div class="column">
+                  <p>Отец</p>
+                </div>
+                <div class="column">
+                  <p>Мать</p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="slidecontainer">
+                <input id="skinSimilarity" type="range" min="1" max="100" value="50" class="slider" id="myRange">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div id="height" class="row">
+              <p>Схожесть цвета кожи</p>
+
+              <div class="columns" style="justify-content: space-between; width: 41vw;">
+                <div class="column">
+                  <p>Отец</p>
+                </div>
+                <div class="column">
+                  <p>Мать</p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="slidecontainer">
+                <input id="skinSimilarity" type="range" min="1" max="100" value="50" class="slider" id="myRange">
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+      <section style="display: none;" id="head" class="body">
+        oeirjgoeijrg
+      </section>
+      <section style="display: none;" id="face" class="body">
+        oeirjgoeijrgsssss
+      </section>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+  <script type="text/javascript" src="./vanilla-tilt.js"></script>
+</body>
+
+</html>
